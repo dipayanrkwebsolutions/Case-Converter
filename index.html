@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Text Case Converter</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="wrap">
+    <h1>Text Case Converter</h1>
+    <textarea id="input" placeholder="Type or paste your text here…"></textarea>
+    <div class="toolbar">
+      <span class="stats" id="stats">Character Count: 0 | Word Count: 0 | Line Count: 0</span>
+    </div>
+    <div class="cases">
+      <button class="case-btn sc" onclick="convert('sentence')"><span class="case-badge">Sc</span> Sentence case</button>
+      <button class="case-btn uc" onclick="convert('upper')"><span class="case-badge">UC</span> UPPER CASE</button>
+      <button class="case-btn cc" onclick="convert('capitalized')"><span class="case-badge">CC</span> Capitalize</button>
+      <button class="case-btn slug" onclick="convert('slug')"><span class="case-badge">Sl</span> kebab-case</button>
+      <button class="case-btn snake" onclick="convert('snake')"><span class="case-badge">Sn</span> snake_case</button>
+    </div>
+  </div>
+  <div class="toast" id="toast"></div>
+  <script src="script.js"></script>
+</body>
+</html>
